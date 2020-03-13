@@ -1,24 +1,8 @@
-package s028;
+package s019;
 
-public class Narrowing {
+public class Byte {
     public static void main(String[] args) {
-        double d = 42;
-        float f = (float)d;
-        long l = (long)f;
-        int i = (int)l;
-        short s = (short)i;
-        byte b = (byte)s;
-        
-        System.out.println(b);
-
-        char c = (char) i;
-        short s2 = (short)c;
-        System.out.println(c + " " + s2); // a schermo leggo * 42 dove * è la trascrizione char di 42,
-        //ovvero se io salvo in una variabile char il numero 42 gli sto dicendo che voglio il 42esimo char, ovvero *
-        //se rifaccio il widening di questo char in int posso farlo e ottengo 42
-        int i2 = c;
-        System.out.println(i2); //stampa 42
-        
+               
         int n = 0b110;
         System.out.println(n);
         byte nb = (byte) n;
@@ -88,6 +72,6 @@ public class Narrowing {
         byte nm8 = (byte) 0b10000000;
         System.out.println("nm8 " + nm8);
         
-        //in byte posso rappresentare 2^8 numeri (da -128 a 127)
+        //in byte posso rappresentare 2^8 numeri (da -128 a 127), ovvero 2*2^7=2^7 negativi + 2^7 positivi
     }
 }

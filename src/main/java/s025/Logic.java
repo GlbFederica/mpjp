@@ -21,7 +21,7 @@ public class Logic {
 
         System.out.println(~gamma); // -6
         //agisce sul segno, usando il bit più a sinistra come indice del segno
-        //e cambiandolo. se è 0 (-) passa a 1 (+), se è 1 (+) passa a 0 (-)
+        //e cambiandolo. se è  1(-) passa a 0(+), se è 0 (+) passa a 1 (-)
  
     }
 }
