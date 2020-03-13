@@ -20,6 +20,10 @@ public class Arithmetic {
         System.out.println(a % c); // 1.0
 
         System.out.println(c - 2.1); // 0.8999999999999999
+        //questo perchè i numeri sono scritti come 1 mantissa ed esponente
+        //e sono però salvati non in base decimale come li scrivo io, ma in base 2 (in binario)
+        //quindi se io scrivo 2.1 non ho in memoria esattamente 2.1 ma una sua approssimazione derivante 
+        //dal fatto che è scritto in binario --> risultato non preciso
         System.out.println(c / 0); // Infinity
     }
 }

@@ -2,9 +2,11 @@ package s018;
 
 public class Variable {
     public static void main(String[] args) {
-        int value = 42;
+        int value;
         String name = "Bob";
 
+        value = 42;
+        
         System.out.println(name);
         System.out.println(value);
 
