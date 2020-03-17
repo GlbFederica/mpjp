@@ -30,7 +30,7 @@ public class ExeCryptoA {
 	public static String encryptCaesar(String s) {
 		
 		if (s == null || s.isEmpty()) {
-			return ("Nothing to encrypt");
+			return "Nothing to encrypt";
 		}
 		
 		StringBuilder se = new StringBuilder(s.length());
@@ -45,7 +45,7 @@ public class ExeCryptoA {
 				se.append('A');
 			}
 			else {
-				return (s + " can't be encypted");
+				return s + " can't be encrypted";
 			}
 		}
 		

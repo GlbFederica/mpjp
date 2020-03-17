@@ -1,5 +1,6 @@
 package ex;
 
+
 public class S02 {
 	/**
 	 * Average speed
@@ -9,8 +10,10 @@ public class S02 {
 	 * @return speed in meters per second
 	 */
 	public static double speed(double distance, double time) {
-		// TODO
-		return 0;
+		
+		double s = distance/time;
+		
+		return s;
 	}
 
 	/**
@@ -23,8 +26,13 @@ public class S02 {
 	 * @return distance
 	 */
 	public static double distance(int x0, int y0, int x1, int y1) {
-		// TODO
-		return 0;
+	
+//		double d = Math.sqrt(Math.pow((x0 - x1), 2) + Math.pow((y0 - y1), 2)); 
+//		
+//		return d;
+		
+		return Math.sqrt(Math.pow((x0 - x1), 2) + Math.pow((y0 - y1), 2));
+		//in questo modo condenso tutto in una riga senza variabili di appoggio
 	}
 
 	/**
@@ -36,8 +44,11 @@ public class S02 {
 	 * @return the engine capacity in cm^3
 	 */
 	public static double engineCapacity(double bore, double stroke, int nr) {
-		// TODO
-		return 0;
+		
+		double cu = Math.PI * Math.pow((bore/(10*2)), 2) * (stroke/10);
+		double c = cu * nr;
+				
+		return c;
 	}
 
 	/**
@@ -47,8 +58,17 @@ public class S02 {
 	 * @return sum of digits
 	 */
 	public static int digitSum(int value) {
-		// TODO
-		return 0;
+		
+		int n = Math.abs(value);
+		int sum = 0;
+			
+		while (n != 0) {
+			
+			sum += n%10;
+			n /= 10;
+		}
+		
+		return sum;
 	}
 
 	/**
@@ -60,7 +80,21 @@ public class S02 {
 	 * @return
 	 */
 	public static int score(double x, double y) {
-		// TODO
-		return 0;
+		
+		int s = 0;
+		
+		double d = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+		
+		if (d>0 && d<=1) {
+			s = 10;
+		} else if (d>1 && d<=5) {
+			s = 5;
+		} else if (d>5 && d<=10) {
+			s = 1;
+		}
+		
+		//si poteva anche mettere return n all'interno di ogni if in base al valore di interesse
+		
+		return s;
 	}
 }

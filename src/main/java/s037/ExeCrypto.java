@@ -63,7 +63,7 @@ public class ExeCrypto {
 				se.append('A');
 			}
 			else {
-				return (s + " can't be encypted");
+				return (s + " can't be encrypted");
 			}
 		}
 		
