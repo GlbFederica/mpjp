@@ -6,7 +6,7 @@ public class For {
             System.out.println("Begin block loop " + i);
 
             if (i == 2) {
-                continue;
+                continue; // interrompe il loop for per questo valore dell'indice, si torna all'inizio del for per i=3
             }
 
             System.out.println("End block loop " + i);

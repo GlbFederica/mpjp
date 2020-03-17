@@ -3,12 +3,16 @@ package s038;
 public class AboutStringBuilder {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
+        //crea una stringa StringBuilder
         StringBuilder sb2 = new StringBuilder(20);
+        //crea una StringBuilder di 20 caratteri -> alloco già lo spazio per la mia stringa
         StringBuilder sb3 = new StringBuilder("hello");
+        //crea una StringBuilder a partire da una stringa
         
         System.out.println("capacity 1: " + sb.capacity());
         System.out.println("capacity 2: " + sb2.capacity());
         System.out.println("capacity 3: " + sb3.capacity());
+        //capacità di uno stringbuilder, anche se in realtà poi java adatta la dimensione in base a quello che ci metto
         
         System.out.println("appending: " + sb3.append(' ').append("world"));
         

@@ -10,7 +10,7 @@ public class Exercise {
         }
 
         for (int i = 0; i < flags.length; i++) {
-            if (!flags[i]) {
+            if (!flags[i]) { //se flags[i] è false
                 flags[i] = true;
             }
         }
@@ -22,7 +22,7 @@ public class Exercise {
 
         for (boolean flag : flags) {
             if (!flag) {
-                flag = true;
+                flag = true; // lavoro sulla variabile d'appoggio flag -> non cambia l'array al di fuori del ciclo for
             }
         }
 
