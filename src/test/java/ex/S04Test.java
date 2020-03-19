@@ -77,13 +77,46 @@ class S04Test {
 		assertThat(actual, is(0L));
 	}
 
+
 	@Test
-	void fibonacci() {
-		fail("Not yet implemented");
+	void fibonacciZero() {
+		long actual = S04.fibonacci(0);
+		
+		assertThat(actual, is(0L));
 	}
 
 	@Test
+	void fibonacciOne() {
+		long actual = S04.fibonacci(1);
+		
+		assertThat(actual, is(1L));
+	}
+	
+	@Test
+	void fibonacciTwo() {
+		long actual = S04.fibonacci(2);
+		
+		assertThat(actual, is(1L));
+	}
+
+	@Test
+	void fibonacciSeven() {
+		long actual = S04.fibonacci(7);
+		
+		assertThat(actual, is(13L));
+	}
+	
+	@Test
 	void multiplicationTable() {
-		fail("Not yet implemented");
+		int[][] actual = S04.multiplicationTable(5);
+		
+		int[][] array = {{1,2,3,4,5},
+				{2,4,6,8,10},
+				{3,6,9,12,15},
+				{4,8,12,16,20},
+				{5,10,15,20,25}};
+				
+		assertThat(actual, is(array));
+		
 	}
 }

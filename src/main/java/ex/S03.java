@@ -8,8 +8,15 @@ public class S03 {
 	 * @return "positive", "negative", or "zero"
 	 */
 	public static String checkSign(int value) {
-		// TODO
-		return "";
+		
+		if(value > 0) {
+			return "positive";
+		}else if (value < 0) {
+			return "negative";
+		} else {
+			return "zero";
+		}
+	
 	}
 
 	/**
@@ -19,7 +26,11 @@ public class S03 {
 	 * @return "odd" or "even"
 	 */
 	public static boolean isOdd(int value) {
-		// TODO
+
+		if (value%2 != 0) {
+			return true;
+		} 
+		
 		return false;
 	}
 
@@ -30,8 +41,16 @@ public class S03 {
 	 * @return "zero" for 0 ... "nine" for 9, or "other"
 	 */
 	public static String asWord(int value) {
-		// TODO
-		return "";
+		
+		String[] word = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Nine"};
+		
+		if (value < 0 || value > 9) {
+			return "Other";
+		}
+		
+		return word[value];
+		
+		//idea di giovanni, più snello e leggibile di uno switch
 	}
 
 	/**
@@ -43,8 +62,31 @@ public class S03 {
 	 * @return a letter in [A, F]
 	 */
 	public static char vote(double percentile) {
-		// TODO
-		return 'F';
+		// si può fare con tutti if else if...o in modo più snello come di seguito
+		
+		if (percentile < 0 || percentile >100) {
+			//qui andrebbe tirata un'eccezione, non lo sappiamo ancora fare quindi restituiamo in maniera bruta un?
+			return '?';
+		}
+		
+		if (percentile <= 50) {
+			return 'F';
+		}
+		if (percentile <= 60) {
+			return 'E';
+		}
+		if (percentile <= 70) {
+			return 'D';
+		}
+		if (percentile <= 80) {
+			return 'C';
+		}
+		if (percentile <= 90) {
+			return 'B';
+		}
+		//si può fare o con solo if o con else if
+		
+		return 'A'; // Non serve if perchè ho già escluso tutti gli altri casi
 	}
 
 	/**
@@ -54,7 +96,11 @@ public class S03 {
 	 * @return true if leap year
 	 */
 	public static boolean isLeapYear(int year) {
-		// TODO
+		
+		if (year > 1580 && ((year%4 == 0 && year%100 != 0) || year%400 == 0)) {
+			return true;
+		}
+
 		return false;
 	}
 

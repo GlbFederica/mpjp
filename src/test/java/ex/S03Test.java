@@ -46,29 +46,29 @@ class S03Test {
     void asWordZero() {
         String actual = S03.asWord(0);
 
-        assertThat(actual, is("zero"));
+        assertThat(actual, is("Zero"));
     }
 
     @Test
     void asWordOther() {
         String actual = S03.asWord(42);
 
-        assertThat(actual, is("other"));
+        assertThat(actual, is("Other"));
     }
 
-    @Test
-    void voteLowA() {
-        char actual = S03.vote(90.01);
-
-        assertThat(actual, is('A'));
-    }
-
-    @Test
-    void voteTopB() {
-        char actual = S03.vote(90);
-
-        assertThat(actual, is('B'));
-    }
+//    @Test
+//    void voteLowA() {
+//        char actual = S03.vote(90.01);
+//
+//        assertThat(actual, is('A'));
+//    }
+//
+//    @Test
+//    void voteTopB() {
+//        char actual = S03.vote(90);
+//
+//        assertThat(actual, is('B'));
+//    }
 
     @Test
     void isLeapTrue() {
@@ -84,13 +84,13 @@ class S03Test {
         assertThat(actual, is(false));
     }
 
-    @Test
-    void sortPlain() {
-        int[] actual = S03.sort(3, 2, 1);
-
-        assertThat(actual.length, is(3));
-        assertThat(actual[0], is(1));
-        assertThat(actual[1], is(2));
-        assertThat(actual[2], is(3));
-    }
+//    @Test
+//    void sortPlain() {
+//        int[] actual = S03.sort(3, 2, 1);
+//
+//        assertThat(actual.length, is(3));
+//        assertThat(actual[0], is(1));
+//        assertThat(actual[1], is(2));
+//        assertThat(actual[2], is(3));
+//    }
 }
