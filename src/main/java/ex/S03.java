@@ -26,7 +26,11 @@ public class S03 {
 	 * @return "odd" or "even"
 	 */
 	public static boolean isOdd(int value) {
-
+		
+		if(value==0) {
+			throw new IllegalArgumentException("0 is neither positive or negative");
+		}
+		
 		if (value%2 != 0) {
 			return true;
 		} 

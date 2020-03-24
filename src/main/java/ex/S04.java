@@ -51,7 +51,7 @@ public class S04 {
 	public static long factorial(int value) {
 
 		if (value < 0) {
-			return 0;
+			throw new IllegalArgumentException("Can't calculate factorial of a negative number");
 		}
 
 		long result = 1;

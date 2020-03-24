@@ -2,6 +2,7 @@ package ex;
 
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
@@ -41,6 +42,19 @@ class S03Test {
 
         assertThat(actual, is(false));
     }
+    
+    void isOddZero() {
+		try {
+			S03.isOdd(0);
+			 fail("An IllegalArgumentException was expected");
+		} 
+		catch (IllegalArgumentException iae) {
+			String message = iae.getMessage();
+			assertThat(message, is("0 is neither positive or negative"));
+            return;
+		}
+
+	}
 
     @Test
     void asWordZero() {
@@ -56,19 +70,19 @@ class S03Test {
         assertThat(actual, is("Other"));
     }
 
-//    @Test
-//    void voteLowA() {
-//        char actual = S03.vote(90.01);
-//
-//        assertThat(actual, is('A'));
-//    }
-//
-//    @Test
-//    void voteTopB() {
-//        char actual = S03.vote(90);
-//
-//        assertThat(actual, is('B'));
-//    }
+    @Test
+    void voteLowA() {
+        char actual = S03.vote(90.01);
+
+        assertThat(actual, is('A'));
+    }
+
+    @Test
+    void voteTopB() {
+        char actual = S03.vote(90);
+
+        assertThat(actual, is('B'));
+    }
 
     @Test
     void isLeapTrue() {

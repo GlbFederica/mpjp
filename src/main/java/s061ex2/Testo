@@ -1,0 +1,21 @@
+// negozio per animali domestici, voglio gestire la possibilità di fare
+		// determinate cose agli animali che mi portano le persone.
+		// voglio una gerarchia di classi per gli animali che gestisco
+		//   Pet (abstract int housing)-> non voglio creare oggetti Pet, ma solo oggetti Dog o Cat) ->
+		//   |  \
+		// (Cat, Dog)
+		
+		//ctor(int) -> int quanti gg devo tenerlo
+		
+		//cane x1gg -> 10 (housing, ovvero quanto costa al gg)
+		//gatto x1gg -> 6
+		
+		//bob = new Dog(3) -> sto creando un cane bob che starà 3 gg usando il costruttore ctor(int)
+		//tom = new Cat(1) 
+		//bob.housing() -> 30 per ogni animale con la funzione housing voglio il costo complessivo
+		// con un for each voglio calcolare l'housing complessivo =36
+		
+
+		// nel main voglio un array di Pet che contiente cani e gatti che mi portano i
+		// clienti, non potendo avere oggetti Pet avrò un array di pet con i singoli
+		// elementi che sono di altro tipo

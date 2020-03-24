@@ -2,8 +2,8 @@ package s054ex;
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle[] vehicles = new Vehicle[3];
-        vehicles[0] = new Car();
+        Vehicle[] vehicles = new Vehicle[3]; //array di veicoli
+        vehicles[0] = new Car(); 
         vehicles[1] = new Bus();
         vehicles[2] = new MotorBike();
         
@@ -13,7 +13,7 @@ public class Main {
             rightDirection = !rightDirection;
         }
         
-        Conditioning[] conditionings = new Conditioning[2];
+        Conditioning[] conditionings = new Conditioning[2]; 
         conditionings[0] = new Bus();
         conditionings[1] = new Car();
         

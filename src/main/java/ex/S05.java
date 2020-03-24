@@ -10,7 +10,7 @@ public class S05 {
 	public static String reverse(String s) {
 
 		if (s == null || s.isEmpty()) {
-			return s;
+			throw new IllegalArgumentException("No string to reverse") ;
 		}
 
 		StringBuilder rev = new StringBuilder(s.length());
@@ -31,7 +31,7 @@ public class S05 {
 	public static boolean isPalindrome(String s) {
 
 		if (s == null || s.isEmpty()) {
-			return false;
+			throw new IllegalArgumentException("No string to evaluate");
 		}
 
 		for (int i = 0; i < s.length() / 2; i++) {
@@ -52,7 +52,7 @@ public class S05 {
 	public static String removeVowels(String s) {
 
 		if (s == null || s.isEmpty()) {
-			return s;
+			throw new IllegalArgumentException("No string to evaluate");
 		}
 
 		StringBuilder rem = new StringBuilder(s.length());
@@ -78,7 +78,7 @@ public class S05 {
 	public static int bin2dec(String s) {
 
 		if (s == null || s.isEmpty()) {
-			return 3;
+			throw new IllegalArgumentException("No string to evaluate");
 		}
 
 		int n = 0;
@@ -96,7 +96,7 @@ public class S05 {
 	public static int bin2dec2(String s) {
 
 		if (s == null || s.isEmpty()) {
-			return 0;
+			throw new IllegalArgumentException("No string to evaluate");
 		}
 
 		int n = 0;
