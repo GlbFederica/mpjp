@@ -4,6 +4,7 @@ use me;
 
 -- regions
 drop table if exists regions;
+-- drop table if exist vuol dire che elimina la tabella se esiste
 
 create table regions(
 	region_id integer primary key auto_increment,
@@ -309,3 +310,4 @@ insert into job_history (employee_id,start_date,end_date,job_id,department_id) v
 insert into job_history (employee_id,start_date,end_date,job_id,department_id) values ('200',str_to_date('01-JUL-02','%d-%b-%y'),str_to_date('31-DEC-06','%d-%b-%y'),'AC_ACCOUNT','90');
 
 commit;
+
