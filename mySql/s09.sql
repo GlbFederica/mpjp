@@ -29,14 +29,14 @@ from jobs;
 -- alias
 select job_title, min_salary as original, min_salary salary from jobs;
 -- as può anche essere omesso
-select job_title, min_salary + 2000 "increased min salary" from jobs;
+select job_title, min_salary + 2000 'increased min salary' from jobs;
 
 -- dual
 select current_date from dual;
 select 1+2, 3-4, 2*6, 5/2, current_date;
 
 -- concatenation
-select concat(country_id, "...", region_id, '!' )
+select concat(country_id, '...', region_id, '!' )
 -- concat mi concatena quello che c'è tra le (). in questo caso mi mette country_ id + ... + region_id + !
 from countries;
 

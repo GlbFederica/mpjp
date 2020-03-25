@@ -15,6 +15,7 @@ from regions
 where region_id between 2 and 3;
 -- between a differenza di java considera compresi entrambi gli estremi (intervallo chiuso sia a sx che a dx)
 -- si può ovviamente negare where region_id not between 2 and 3;
+
 select *
 from countries
 where country_name between 'a' and 'c';

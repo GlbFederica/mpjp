@@ -11,6 +11,7 @@ where table_schema='me';
 
 -- table information
 describe countries;
+-- descrive le colonne di una tabella
 select * from information_schema.columns c
 where c.table_schema='me' and c.table_name = 'countries';
 
