@@ -5,3 +5,4 @@ from regions natural join (
     select region_id, count(*) country_count
     from countries
     group by region_id) c;
+    

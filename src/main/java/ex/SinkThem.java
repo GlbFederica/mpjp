@@ -177,7 +177,7 @@ public class SinkThem {
 				System.out.println("Bad input! Insert a number between 4 and 15.");
 			}
 		} while (dimension < 4 || dimension > 15);
-		
+
 //		int dimension = sc.nextInt();
 //		while (dimension < 4 || dimension > 15) {
 //			System.out.println("Bad input. Size accepted only between 5 and 15.");
@@ -200,9 +200,9 @@ public class SinkThem {
 
 		while (counter > 0) {
 			System.out.println("Enter the row:");
-			int r = Integer.parseInt(sc.nextLine()) -1;					
+			int r = Integer.parseInt(sc.nextLine()) - 1;
 			System.out.println("Enter the column:");
-			int c = Integer.parseInt(sc.nextLine()) -1;
+			int c = Integer.parseInt(sc.nextLine()) - 1;
 			System.out.println("You are shooting the cell: " + (r + 1) + ", " + (c + 1));
 			System.out.println("Press ENTER to shoot");
 			sc.nextLine();
@@ -217,10 +217,10 @@ public class SinkThem {
 			System.out.println("\n" + st.getBoard());
 		}
 		sc.close();
-		
+
 		System.out.println("YOU WIN!!");
 		System.out.println("You scored " + st.getPoints());
 		System.out.println(st);
-		
+
 	}
 }

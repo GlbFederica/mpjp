@@ -25,6 +25,9 @@ select ln(exp(1)), log(exp(1)), log(10, 100);
 
 -- rounding
 select round(5.75), round(5.75, 1), round(5.75, -1);
+-- (5.75) arrotonda all'unità
+-- (5.75, 1) arrotonda a 1 cifra decimale (1 posizione in più rispetto all'unità)
+-- (5.75, -1) arrotonda alla decina (1 posizione in meno rispetto all'unità
 
 -- truncating
 select truncate(5.75, 0), truncate(5.75, 1), truncate(5.75, -1);
